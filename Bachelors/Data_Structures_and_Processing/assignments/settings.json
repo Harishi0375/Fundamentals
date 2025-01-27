@@ -1,0 +1,15 @@
+{
+    "files.autoSave": "afterDelay",
+    "haskell.manageHLS": "GHCup",
+    "haskell.ghcupExecutablePath": "${HOME}/.ghcup/bin:$PATH",
+    "python.autoComplete.extraPaths": [
+        "/usr/lib/python3/dist-packages/numpy",
+        "/usr/lib/python3/dist-packages/matplotlib"
+    ],
+    "python.analysis.extraPaths": [
+        "/usr/lib/python3/dist-packages/numpy",
+        "/usr/lib/python3/dist-packages/matplotlib",
+        "/usr/lib/python3/dist-packages/pandas"
+
+    ]
+}

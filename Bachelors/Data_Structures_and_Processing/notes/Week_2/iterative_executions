@@ -1,0 +1,16 @@
+people = [
+    ["Person 5", 24],
+    ["Person 7", 22],
+    ["Person 1", 27],
+    ["Person 6", 27],
+    ["Person 2", 24],
+    ["Person 9", 20],
+    ["Person 3", 29],
+    ["Person 8", 27],
+    ["Person 4", 25]    
+]
+
+number_of_people = len(people)
+
+for k in range(number_of_people):
+    print(people[k][0] + " is " + str(people[k][1]) + " years old.")
