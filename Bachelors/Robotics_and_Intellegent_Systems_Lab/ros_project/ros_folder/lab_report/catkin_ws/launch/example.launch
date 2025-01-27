@@ -1,0 +1,30 @@
+<launch>
+	<node name="talker" pkg="beginner_tutorials"
+type="talker" output="screen"/>
+	<node name="listener" pkg="beginner_tutorials"
+type="listener" output="screen"/>
+</launch>
+
+<launch>
+	<include file="$(find other_package)/launch/other_launch_file.launch"/>
+</launch>
+
+<launch>
+	<group ns="robot1">
+		<node name="node1" pkg="my_package"
+type="node1_executable" output="screen"/>
+		<node name="node2" pkg="my_package"
+type="node2_executable" output="screen"/>
+	</group>
+</launch>
+
+<launch>
+	<node name="talker" pkg="beginner_tutorials"
+type="talker" output="screen">
+		<remap from="/chatter" to="/new_chatter"/>
+	</node>
+	<node name="listener" pkg="beginner_tutorials"
+type="listener" output="screen">
+		<remap from="/chatter" to="/new_chatter"/>
+	</node>
+</launch>
