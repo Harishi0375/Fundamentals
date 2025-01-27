@@ -1,0 +1,7 @@
+/*Using namespace std; to comment out: You must provide the namespace for each standard library function and object that you use when using namespace std;. 
+For instance, std::cin must be used in place of cin. For cout and other common library functions, the same holds true.
+
+Taking off the prefix Critter::
+The compiler won't be able to determine which class setName belongs to in Critter.cpp if the Critter:: prefix is removed. 
+One possible outcome is a "undeclared identifier" error.
+*/
