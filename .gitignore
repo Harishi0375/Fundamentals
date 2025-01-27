@@ -1,0 +1,23 @@
+**.vscode**
+**build**
+**node_modules**
+**__pycache__**
+**.py[cod]**
+**__MACOSX**
+**.zip**
+
+# Object files
+**.o**
+**.ko**
+**.obj**
+**.elf**
+
+# Executables
+**.exe**
+**.out**
+**.app**
+
+# ROS
+**devel**
+**logs**
+**build**
