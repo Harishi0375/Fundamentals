@@ -1,0 +1,69 @@
+6.1
+
+c)
+
+Insertion Sort
+
+Stable.
+
+So insertion sort loops through the unsorted part of the array and checks if it the i+1th element
+is greater than the ith element, if they are equal, the algorithm places the i+1th element after the ith
+element, this insures that if there are ever two or more elements with the same value, the original order of
+those pairs will be kept
+
+Merge Sort
+
+Stable.
+
+because of the divide and conquere method, merge sort is stable. The algorithm will always only swap if one
+element is bigger than the othe meaning that when you go to the bottom of the revursion trea where its 
+[R, S] where R,S are the same values in order, the algorithm will not swap them keeping them in their original order
+this is also true up the recursion tree so if you have 
+[R,S,Q], [R,S,Q,T] and so on, the order of the values will not change from the order of the original array 
+
+Heap Sort
+
+Unstable.
+
+The reason Heap sort is unstable is due to the heapify and max heap function. When it is done, 
+the heap is done with the formula of every parent having a array[2n], array[2n+1] children. And then
+when you heapify and swap for the root to be extract, the order of the R,S can be mixed up resulting
+in the order of the same values to be mixed from the original array
+
+Bubble Sort
+
+Stable.
+
+bubble sort works by comparing adjacent values. Because buble sort only swaps the adjacent values if one is bigger
+it is stable as it will never perform a swap on two adjacent values that are the same. 
+
+d)
+
+An easy way to know if an algorithm is adaptive is if the best case varies from the average and/or worst case
+
+Insertion Sort
+
+Adaptive.
+
+becuase best case is O(n) and average case is O(n), meaning that the algorive adapts, to a almost / fully 
+sorted array
+
+Merge Sort
+
+Not Adaptive.
+
+Because its time complexity for all case is O(n * log n) since the divide and conquer technique canot
+benefit mostly or fully sorted arrays. 
+
+Heap Sort
+
+Not Adaptive. 
+
+because the time complexity for all cases is O(n * log n ) meaning that the algorithm does not adapt
+to somewhat or mostly sorted array
+
+Bubble Sort
+
+Adaptive. 
+
+because its best case is O(n), and its average and worst case is O(n^2)

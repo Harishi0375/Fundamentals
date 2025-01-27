@@ -1,0 +1,18 @@
+4.1)
+
+c)
+
+For my Ks, I decided to chose 10, 30, 50 and 90. For the Avergae and Worst we
+see 100% reduction in time taken to sort the arrays as the K increased. In the case
+of Best case arrays, its over double increase in performance. This means that the more
+the modified merge sort relies on the insertion sort the worse it scales which makes sense
+due to the O(n^2) of insertion sort. 
+
+All of the statements are based on the images that visualise the time taken in microseconds
+to sort arrays of size [0, 10000)
+
+d)
+
+In practice I would try and run this experiment until I see a decrease in perfomance or not change.
+Here in this case it seems that after 50 there is not that much of a difference, so I would do test
+70 and keep on halfing the distancde until I reach the optimal value of k. 

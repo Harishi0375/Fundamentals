@@ -1,0 +1,32 @@
+a)
+
+Each multiplication takes O(n) time. And because there are n amount of bits, each bit will perform
+O(n) resulting in a T(n) = O(n^2) time complexity.
+
+b)
+
+For the divide and conquer, we can split a and b recursivly in half to get 4 subproblems, solve them and merge them.
+Merging will be O(n) and the splitting and solving will be recusrive so 4T(n/2). 
+
+c)
+
+Therefore the equation will be T(n) = 4T(n/2) + O(n)
+
+d)
+
+using the recursion tree method we get the following. So the height of the tree is
+O(log(n)) with each level having a time complexity of O(n) because they each have 2^level(n/2^level) elements
+which when added up are n. 
+
+This leads with a time complecity of T(n) = O(n^2*log(n))
+
+e)
+
+a = 4
+b = 2
+f(n) = O(n)
+
+n^log_b(a) = n^log_2(4) = n^2
+
+therefore the time complexity is T(n) = 4T(n/2) + O(n) = O(n^2 * log(n))
+

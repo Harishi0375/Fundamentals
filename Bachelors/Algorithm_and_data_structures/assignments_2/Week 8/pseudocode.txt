@@ -1,0 +1,23 @@
+8.1 c
+
+CountIntervals(arr, k, a, b):
+    // Initialize an array for auxiliary storage with size (k+1)
+    auxiliary_storage = new Array(k+1)
+    
+    // Initialize all elements of auxiliary storage to 0
+    for i = 0 to k:
+        auxiliary_storage[i] = 0
+    
+    // Pre-processing: Count occurrences of each integer in arr
+    for i = 0 to n-1:
+        auxiliary_storage[arr[i]] = auxiliary_storage[arr[i]] + 1
+    
+    // Cumulative sum
+    for i = 1 to k:
+        auxiliary_storage[i] = auxiliary_storage[i] + auxiliary_storage[i-1]
+    
+    // Return count of integers falling in the interval [a, b]
+    if a == 0:
+        return auxiliary_storage[b]
+    else:
+        return auxiliary_storage[b] - auxiliary_storage[a-1]

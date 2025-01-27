@@ -1,0 +1,9 @@
+When comparing the original Heap Sort with its Bottom-up Heap Sort variant for input sequences of 
+different lengths, including larger input sequences, several observations can be made.
+The original Heap Sort typically performs better on smaller input sequences due to its 
+efficient build and heapify operations, but as the input size increases, the overhead of 
+heapifying and rebuilding the entire heap becomes more significant, impacting performance.
+Conversely, the Bottom-up Heap Sort variant may show improved performance on larger input 
+sequences due to its optimized approach, reducing the number of comparisons and swaps.
+However, this comes with increased implementation complexity compared to the original 
+algorithm. Memory usage remains relatively constant for both algorithms, and neither is stable.

@@ -1,0 +1,32 @@
+// 11.2 b
+GreedyActivitySelector(S)
+
+    // a list of activities with their start (s_i) and finish (f_i) times
+    // a list of selected activities
+    Input: S 
+    Output: L 
+
+    // Initialize the list of selected activities
+    L = empty list       
+
+    while S is not empty:
+        // Initialize max_start to the smallest possible value
+        max_start = -∞          
+        // Initialize the activity to add to null  
+        activity_to_add = null    
+
+        // Find the activity with the latest start time
+        for each activity in S:
+            if activity.start > max_start:
+                max_start = activity.start
+                activity_to_add = activity
+
+        // Add the selected activity to the list L
+        add activity_to_add to L
+
+        // Remove all overlapping activities from S
+        for each activity in S:
+            if activity.start < activity_to_add.finish:
+                remove activity from S
+
+    return L
